@@ -31,6 +31,26 @@ namespace SignalR_Applications.Controllers
             return Accepted();
         }
 
+        public IActionResult Notification()
+        {
+            return View();
+        }
+
+        public IActionResult VoteSystem()
+        {
+            return View();
+        }
+
+        public IActionResult HouseGroups()
+        {
+            return View();
+        }
+
+        public IActionResult BasicChat()
+        {
+            return View();
+        }
+
         public IActionResult Index()
         {
             return View();
