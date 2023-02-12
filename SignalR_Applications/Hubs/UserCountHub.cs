@@ -11,7 +11,6 @@ namespace SignalR_Applications.Hubs
         {
             TotalUsers++;
             Clients.All.SendAsync("updateTotalUsers", TotalUsers).GetAwaiter().GetResult();
-            // .GetAwaiter().GetResult() => because i can not use await here.
             return base.OnConnectedAsync();
         }
         public override Task OnDisconnectedAsync(Exception? ex)
