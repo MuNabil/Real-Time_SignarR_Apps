@@ -12,5 +12,6 @@ namespace SignalR_Applications.Data
         }
 
         public DbSet<Order> Orders { get; set; }
+        public DbSet<ChatRoom> ChatRoom { get; set; }
     }
 }
